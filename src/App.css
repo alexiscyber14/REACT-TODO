@@ -1,3 +1,115 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.list-wrapper {
+  border: 1px solid grey;
+  width: 400px;
+  padding: 1%;
+  border-radius: 6px;
+  background-color: rgb(13, 107, 99);
+}
+
+.list-container {
+  padding-top: 10px;
+}
+
+.form-cont {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+}
+
+.form-cont form {
+  width: 100%;
+  display: flex;
+  box-shadow: 2px 2px 8px white;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-cont form .task-input {
+  width: 88%;
+  height: 30px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+}
+
+.todo-list button {
+  border: none;
+  margin-left: 4px;
+}
+
+.form-cont form button {
+  border-radius: 0;
+  border: none;
+  font-size: 15px;
+  height: 32px;
+  font-weight: bold;
+  padding: 1.8%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  outline: none;
+}
+
+.list-li li {
+  list-style: none;
+  display: flex;
+  background-color: white;
+  flex-direction: row;
+  margin: 2px;
+  padding: 4px;
+}
+
+.list-li li .list {
+  outline: none;
+  width: 80%;
+  border: none;
+  font-size: 17px;
+}
+
+.complete {
+  text-decoration: line-through;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
